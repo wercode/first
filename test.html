@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#a{width: 100px;height: 100px;background: #ccc;}
+	</style>
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// alert(1);
+			var box = $("<div id='a1'></div>");
+			$("#a").append(box);
+			box.css({
+				"width":"50px",
+				"height":"50px",
+				"background":"#000"
+			});
+		})
+	</script>
+</head>
+<body>
+	<div id="a"></div>
+	
+</body>
+</html>
